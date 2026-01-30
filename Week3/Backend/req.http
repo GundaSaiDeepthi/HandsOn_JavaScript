@@ -1,0 +1,75 @@
+//to check whether they are
+GET http://localhost:3000/user-api/users 
+
+###  //to break
+POST http://127.0.0.1:3000/user-api/users
+Content-Type: application/json
+
+{
+    "id":104,
+    "name":"Ram",
+    "age":23
+}
+
+###
+PUT http://127.0.0.1:3000/user-api/users
+Content-Type: application/json
+
+{
+    "id":104,
+    "name":"Sai Deepthi",
+    "age":20
+}
+
+### Read a user by id
+GET http://localhost:3000/user-api/users/104
+
+###
+DELETE http://127.0.0.1:3000/user-api/users/104
+
+
+//localhost==127.0.0.1
+
+
+
+
+
+
+//to check whether they are
+###
+GET http://localhost:3000/product-api/products 
+
+###  
+POST http://127.0.0.1:3000/product-api/products
+Content-Type: application/json
+
+{
+    "productId":201,
+    "name":"Phone",
+    "price":23000,
+    "brand":"samsung"
+}
+
+###
+PUT http://127.0.0.1:3000/product-api/products
+Content-Type: application/json
+
+{
+    "productId":201,
+    "name":"c-type cable",
+    "price":200,
+    "brand":"samsung"
+}
+
+### Read a product by id
+GET http://localhost:3000/product-api/products-id/201
+
+### Read a product by brand
+GET http://localhost:3000/product-api/products-brand/samsung
+
+###
+DELETE http://127.0.0.1:3000/product-api/products/201
+
+
+//localhost==127.0.0.1
+
