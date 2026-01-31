@@ -1,0 +1,71 @@
+### Read all Users
+GET http://localhost:4000/user-api/users
+
+### Read user by ObjectID
+GET http://localhost:4000/user-api/users/697dba7e4858c0a284b7be29
+
+###Create User
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"manasa",
+    "password":"manasa",
+    "age":21
+    
+}
+
+
+###Update User by ObjectId
+PUT http://localhost:4000/user-api/users/697dbcfd1741b59b360e0baf
+Content-Type: application/json
+
+{
+    "username":"manasa",
+    "password":"manasa",
+    "age":17
+    
+}
+
+
+###Delete User by ObjectId
+DELETE http://localhost:4000/user-api/users/697dbcfd1741b59b360e0baf
+Content-Type: application/json
+
+{
+    "username":"manasa",
+    "password":"manasa",
+    "age":17
+    
+}
+
+
+### Read all products
+GET http://localhost:4000/product-api/products
+
+
+### Create a new product
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "pid":1003,
+    "productName":"Laptop",
+    "price":80000
+}
+
+### Read product by ObjectId
+GET http://localhost:4000/product-api/products/697dd55ac964ccf10f178c65
+
+### update product by objectId
+PUT http://localhost:4000/product-api/products/697e20c3887fbdf8adfde999
+Content-Type: application/json
+
+{
+    "pid":1002,
+    "productName":"Desktop",
+    "price":70000
+}
+
+### Delete product by Objectid
+DELETE http://localhost:4000/product-api/products/697e2317a7e0dbf5d79e03e5
